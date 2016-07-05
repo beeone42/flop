@@ -5,7 +5,9 @@ OBJS	= ${SRCS:.c=.o}
 
 NAME	= flop
 
-OSNAME	= bin/${NAME}_${HOSTTYPE}
+BINDIR  = bin
+
+OSNAME	= ${BINDIR}/${NAME}_${HOSTTYPE}
 
 PREFIX	= /usr/local/sbin
 
@@ -18,14 +20,14 @@ CFLAGS	= -g -O -Wall ${CLNF} ${DLNF} -I./include
 LDFLAGS	= -L/usr/pkg/lib -lpcap ${LLNF} -lncurses -ltermcap
 
 CC	= cc
-
 RM	= rm -f
-
 LN	= ln -s
+MKDIR	= mkdir -p
 
 INSTALL	= install
 
 ${NAME}: ${OBJS}
+	${MKDIR} ${BINDIR}
 	${CC} ${CFLAGS} ${OBJS} ${LDFLAGS} -o ${OSNAME}
 	${RM} ${NAME}
 	${LN} ${OSNAME} ${NAME}
