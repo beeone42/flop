@@ -1,7 +1,7 @@
 # flop
 network interface promiscious bandwith ncurses meter
 
-![flop](https://cloud.githubusercontent.com/assets/11945268/16584001/7a8bc190-42b9-11e6-9c79-d751c46353d4.png)
+![flop](https://cloud.githubusercontent.com/assets/11945268/16584399/37581876-42bc-11e6-8f3b-18ca239f9e8b.gif)
 
 ## install
 ````
