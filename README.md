@@ -5,7 +5,8 @@ network interface promiscious bandwith ncurses meter
 
 ## install
 ````
-apt-get install libncurses5-dev libpcap-dev libnet1-dev
+apt-get update
+apt-get -y install libncurses5-dev libpcap-dev libnet1-dev
 make
 make install
 ````
